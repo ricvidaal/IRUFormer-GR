@@ -6,6 +6,8 @@ Image noise in digital pathology degrades the diagnostic accuracy of AI-based sy
 
 The model was trained on **220,025** histopathological images from the **Histopathologic Detection Dataset** and tested on **57,458** images, achieving an average Peak Signal-to-Noise Ratio (**PSNR**) of **41.14 dB** and a Structural Similarity Index (**SSIM**) of **0.9931**. It outperformed state-of-the-art (SOTA) models—including BM3D, DnCNN, Residual MID, DRAN, and the baseline IRUNet—in both metrics.
 
+Although IRUFormer-GR is computationally heavier than some alternative models, it proved to be the most accurate architecture tested on this dataset for reconstructing microscopy images. Its ability to maintain structural integrity and borders across unknown noise levels makes this model highly suitable for real-world clinical applications.
+
 ## 🏗️ Model Architecture
 
 The IRUFormer-GR architecture is designed for robust Gaussian denoising, capable of preserving image details and global context.
