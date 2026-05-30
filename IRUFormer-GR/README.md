@@ -25,7 +25,7 @@ The IRUFormer-GR architecture is designed for robust Gaussian denoising, capable
 ### Quantitative Evaluation
 Comparison under purely Gaussian noise (sigma = 10, 25, 50):
 
-#### Para $\sigma = 10$
+#### For $\sigma = 10$
 | Model | Avg PSNR (dB) | Avg SSIM |
 | :--- | :---: | :---: |
 | BM3D* | 28.19 | 0.6670 |
@@ -45,7 +45,7 @@ Comparison under purely Gaussian noise (sigma = 10, 25, 50):
 | IRUNet (Original) | 39.64 | 0.9925 |
 | **IRUFormer-GR (Ours)** | **41.49** | **0.9948** |
 
-#### Para $\sigma = 50$
+#### For $\sigma = 50$
 | Model | Avg PSNR (dB) | Avg SSIM |
 | :--- | :---: | :---: |
 | BM3D* | 20.14 | 0.4248 |
