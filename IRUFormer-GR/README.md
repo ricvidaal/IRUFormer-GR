@@ -25,12 +25,35 @@ The IRUFormer-GR architecture is designed for robust Gaussian denoising, capable
 ### Quantitative Evaluation
 Comparison under purely Gaussian noise (sigma = 10, 25, 50):
 
+#### Para $\sigma = 10$
 | Model | Avg PSNR (dB) | Avg SSIM |
 | :--- | :---: | :---: |
-| BM3D | 24.45 | 0.5320 |
-| DnCNN | 27.82 | 0.7047 |
-| IRUNet | 38.38 | 0.9800 |
-| **IRUFormer-GR (Ours)** | **41.14** | **0.9931** |
+| BM3D* | 28.19 | 0.6670 |
+| DnCNN | 35.26 | 0.8119 |
+| Residual MID | 36.93 | 0.8769 |
+| DRAN | 39.36 | 0.9735 |
+| IRUNet (Original) | 42.20 | **0.9977** |
+| **IRUFormer-GR (Ours)** | **44.49** | 0.9976 |
+
+#### For $\sigma = 25$
+| Model | Avg PSNR (dB) | Avg SSIM |
+| :--- | :---: | :---: |
+| BM3D* | 25.02 | 0.5042 |
+| DnCNN | 26.70 | 0.7976 |
+| Residual MID | 29.23 | 0.8518 |
+| DRAN | 29.98 | 0.8993 |
+| IRUNet (Original) | 39.64 | 0.9925 |
+| **IRUFormer-GR (Ours)** | **41.49** | **0.9948** |
+
+#### Para $\sigma = 50$
+| Model | Avg PSNR (dB) | Avg SSIM |
+| :--- | :---: | :---: |
+| BM3D* | 20.14 | 0.4248 |
+| DnCNN | 21.49 | 0.5046 |
+| Residual MID | 21.65 | 0.5652 |
+| DRAN | 28.06 | 0.8198 |
+| IRUNet (Original) | 33.31 | 0.9655 |
+| **IRUFormer-GR (Ours)** | **35.40** | **0.9836** |
 
 ### Training Metrics
 ![Training Graphs](assets/images/imagen%20graficas.png)
